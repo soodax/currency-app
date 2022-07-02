@@ -1,0 +1,112 @@
+input {
+    border-radius: 0px;
+}
+
+.convertForm {
+    display: flex;
+    width: 100%;
+    margin: 0 0 10px 0;
+    position: relative;
+
+    &__btn-select {
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        box-shadow: 1px 1px 3px lightgray;
+        padding: 0 10px;
+        min-width: 60px;
+        position: relative;
+        color: rgb(70, 70, 70);
+        font-weight: 500;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    &__btn-select:hover {
+        transition: 0.3s;
+        background: lightgray;  
+    }
+
+    &__btn-select:hover {
+        .convertForm__btn-icon {
+            transition: 0.3s;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__btn-icon {
+        transition: 0.3s;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 12px;
+        right: 0;
+    }
+
+    &__input {
+        appearance: none;
+        box-shadow: 1px 1px 3px lightgray;
+        width: 100%;
+        border: 1px solid lightgray;
+        padding: 10px 0 10px 10px;
+        font-size: 16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: rgb(70, 70, 70);
+    }
+
+    &__input:disabled {
+        appearance: none;
+        box-shadow: 1px 1px 3px lightgray;
+        width: 100%;
+        border: 1px solid lightgray;
+        padding: 10px 0 10px 10px;
+        font-size: 16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: rgb(247, 245, 245);
+    }
+
+    &__selectList-hide {
+        display: none;
+    }
+
+    &__selectList {
+        position: absolute;
+        top: 46px;
+        right: 0;
+        background: lightgrey;
+        z-index: 3;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    &__selectList {
+        position: absolute;
+        top: 46px;
+        right: 0;
+        background: lightgray;
+        z-index: 3;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    &__selectList li {
+        margin: 5px;
+    }
+
+    &__selectList li input {
+        cursor: pointer;
+        background: lightgrey;
+        color: grey;
+        font-weight: 500;
+    }
+
+    &__selectList li input:hover {
+        color: black;
+    }
+
+}

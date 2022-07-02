@@ -1,0 +1,139 @@
+.content {
+    color: rgb(70, 70, 70);
+
+    &__col-main {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 3px lightgray;
+
+        span {
+            text-align: center;
+            margin: 10px;
+            background: rgb(254, 252, 252);
+            border: 1px solid lightgray;
+            border-style: dashed;
+            padding: 5px;
+        }
+    }
+
+    &__currentDate {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__currentValue {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__period-select {
+        
+        display: flex;
+        justify-content: space-between;
+        
+        border-bottom: 1px solid lightgray;
+
+        
+        
+    }
+
+    &__period-item {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        flex: 1 1 33.333%;
+        border-right: 1px solid lightgray;
+        font-weight: 600;
+    }
+
+    &__period-item:last-child {
+        border: none;
+    }
+
+    // &__period-item:hover {
+    //     background: lightgray;
+    // }
+
+    &__col {
+        display: flex;
+        width: 100%;
+        margin: 0 0 10px 0;
+    
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__functionalBlock {
+        display: flex;
+        margin: 0 0 10px 0;
+        gap: 10px;
+
+        button {
+            transition: 0.3s;
+            flex: 1 1 50%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px lightgray;
+            color: rgb(70, 70, 70);
+            font-weight: 500;
+            font-style: 16px;
+        }
+
+        button:hover {
+            transition: 0.3s;
+            background: lightgray;
+
+            .content__icon {
+                transition: 0.3s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__submit {
+        appearance: none;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid lightgrey;
+        box-shadow: 1px 1px 3px lightgray;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(50, 50, 50);
+        border-radius: 10px;
+    }
+
+    &__submit:hover {
+        transition: 0.3s;
+        background: lightgrey;
+    }
+
+    &__icon {
+        transition: 0.3s;
+        max-width: 20px;
+        max-height: 20px;
+        margin: 0 0 0 5px;
+    }
+
+    &__chart {
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 3px lightgray;
+        border-radius: 10px;
+        margin: 0 0 10px 0;
+    }
+
+
+}
