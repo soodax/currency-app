@@ -1,77 +1,65 @@
+//MUI Styles
+.MuiButton-containedSizeSmall {
+    font-size: 10px;
+}
+
+.MuiButton-containedSizeMedium {
+    font-size: 12px;
+}
+
+.MuiButton-iconSizeMedium {
+    margin: 0;
+}
+
 .content {
-    color: rgb(70, 70, 70);
-
-    &__col-main {
-        border: 1px solid lightgray;
-        border-radius: 10px;
-        padding: 10px 5px;
+    &__info {
+        padding: 10px 0;
         display: flex;
-        flex-direction: column;
-        box-shadow: 1px 1px 3px lightgray;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        margin: 0 0 10px 0;
 
-        span {
+        div {
             text-align: center;
-            margin: 10px;
-            background: rgb(254, 252, 252);
-            border: 1px solid lightgray;
-            border-style: dashed;
-            padding: 5px;
+            flex: 1 1 33.333%;
+            font-size: 18px;
         }
     }
 
-    &__currentDate {
-        font-weight: 500;
-        font-size: 18px;
-    }
-
-    &__title {
+    &__currency {
         font-weight: 600;
-        font-size: 18px;
-    }
-
-    &__currentValue {
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-    &__period-select {
-        
-        display: flex;
-        justify-content: space-between;
-        
-        border-bottom: 1px solid lightgray;
-
-        
-        
-    }
-
-    &__period-item {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        flex: 1 1 33.333%;
-        border-right: 1px solid lightgray;
-        font-weight: 600;
-    }
-
-    &__period-item:last-child {
-        border: none;
-    }
-
-    // &__period-item:hover {
-    //     background: lightgray;
-    // }
-
-    &__col {
-        display: flex;
-        width: 100%;
-        margin: 0 0 10px 0;
-    
+        cursor: pointer;
     }
 
     &__row {
         display: flex;
         flex-direction: column;
+
+        h2 {
+            font-size: 18px;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+    }
+
+    &__chart-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__chart-options {
+        margin-bottom: 10px;
+
+        @media (max-width: 540px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__functionalBlock {
@@ -80,60 +68,30 @@
         gap: 10px;
 
         button {
-            transition: 0.3s;
             flex: 1 1 50%;
-            padding: 10px;
-            border: 1px solid lightgray;
-            border-radius: 10px;
-            box-shadow: 1px 1px 3px lightgray;
-            color: rgb(70, 70, 70);
-            font-weight: 500;
-            font-style: 16px;
-        }
-
-        button:hover {
-            transition: 0.3s;
-            background: lightgray;
-
-            .content__icon {
-                transition: 0.3s;
-                transform: rotate(180deg);
-            }
         }
     }
 
-    &__submit {
-        appearance: none;
-        cursor: pointer;
-        transition: 0.3s;
-        padding: 10px;
-        width: 100%;
-        border: 1px solid lightgrey;
-        box-shadow: 1px 1px 3px lightgray;
-        font-size: 16px;
-        font-weight: 500;
-        color: rgb(50, 50, 50);
-        border-radius: 10px;
+    .content__btn {
+        
+        display: flex;
+        align-items: center;
     }
 
-    &__submit:hover {
+    .content__btn-icon {
         transition: 0.3s;
-        background: lightgrey;
     }
 
-    &__icon {
-        transition: 0.3s;
-        max-width: 20px;
-        max-height: 20px;
-        margin: 0 0 0 5px;
+    &__btn:hover {
+        .content__btn-icon {
+            transform: rotate(90deg);
+        }
     }
 
     &__chart {
-        border: 1px solid lightgray;
-        box-shadow: 1px 1px 3px lightgray;
-        border-radius: 10px;
         margin: 0 0 10px 0;
+        border-bottom: 1px solid grey;
+        padding: 0 0 20px 0;
     }
-
 
 }

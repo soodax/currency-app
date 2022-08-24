@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.scss';
+import React from 'react';
 import Main from './components/Main/Main';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="wrapper">
       <Main />

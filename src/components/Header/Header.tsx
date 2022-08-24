@@ -1,6 +1,6 @@
 import './Header.scss';
 
-const Header = (props) => {
+const Header: React.FC = () => {
     return (
         <header className='header'>
             123
